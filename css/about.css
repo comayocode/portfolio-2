@@ -1,0 +1,17 @@
+#about{
+    padding: 60px 25px;
+}
+
+.line {
+    max-width: 100px;
+}
+
+.content {
+    padding-top: 20px;
+}
+
+.selft-description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
