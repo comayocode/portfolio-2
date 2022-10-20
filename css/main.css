@@ -37,3 +37,15 @@ ul {
 li {
   margin: 0; padding: 0;
 }
+
+/* --- ESTILOS PARA TITULOS DE LAS SECCIONES */
+.title-span {
+  color: var(--web-primary-color);
+  font-weight: 500;
+}
+
+.section-title {
+  color: var(--tittle-section);
+  font-size: 22px;
+  font-weight: 500;
+}
