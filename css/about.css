@@ -4,6 +4,7 @@
 
 .line {
     max-width: 100px;
+    padding-left: 10px;
 }
 
 .content {
