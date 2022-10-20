@@ -1,0 +1,319 @@
+* {
+    transition: all 0.3s ease-out;
+    /* Animación al abrir y cerrar menu */
+}
+
+/* --- Nav --- */
+.topnav {
+    height: 70px;
+    background-color: var(--secondary-bg);
+    padding: 0 25px ;
+
+    /* Fijar menu */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* --- Centrar contenido y fijar ancho */
+.topnav-container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* --- Logo --- */
+.logo {
+    margin: auto 0;
+}
+
+/* --- Menu --- */
+.menu li {
+    padding-right: 30px;
+}
+
+.menu-item a {
+    font-family: consolas;
+    color: var(--tittle-card);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 70px;
+}
+
+.menu-link:hover {
+    color: var(--web-primary-color);
+}
+
+.menu-link-span {
+    color: var(--web-primary-color);
+    font-weight: 500;
+}
+
+/* --- Boton descargar resume --- */
+.btn-resume {
+    font-family: consolas;
+    background-color: transparent;
+    border: 1px solid var(--web-primary-color) !important;
+    color: var(--web-primary-color);
+    padding: 8px 12px;
+    font-size: 17px;
+    font-weight: 400;
+    transition-duration: 0.4s;
+    line-height: 1;
+    padding: 0.75rem 1rem;
+}
+
+.btn-resume:hover {
+    background-color: var(--hover-btn);
+}
+
+/* ------------------------------------------------------ */
+/* --- Botones abrir y cerrar menús / Animación clip-path */
+/* ------------------------------------------------------ */
+
+/* Estilos básicos del boton */
+#open-menu {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    top: 10px;
+    right: 25px;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #17181d;
+    color: var(--inside-logo-color);
+    line-height: 50px;
+    text-align: center;
+    z-index: 1000;
+    display: block;
+}
+
+#open-menu.fa-times {
+    /* Animación de rotación y cambio de colores */
+    transform: rotate(180deg);
+
+    background-color: var(--secondary-bg);
+    color: var(--beige-title);
+}
+
+/* Cambio de ubiccion del menu */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    /* Aparecer abajo del open-menu */
+    height: 100%;
+    width: 100%;
+    background-color: #17181d;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    /* Oculta todo */
+    clip-path: circle(0% at 93.3% 4.5%);
+    /* Valores de donde inicia la animacion */
+}
+
+.menu li {
+    padding-right: 0;
+}
+
+.menu.active {
+    clip-path: circle(140% at 93.3% 4.5%);
+    /* Valores de donde inicia la animacion */
+}
+
+.menu a {
+    font-size: 22px;
+    padding-bottom: 22px;
+}
+
+.menu a::before {
+    content: attr(data-text);
+    /* Atributo personalizado */
+    position: absolute;
+
+    /* Centrar */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Estilos */
+    font-size: 5em;
+    color: var(--web-primary-color);
+    pointer-events: none;
+    font-weight: bolder;
+    letter-spacing: 0.4em;
+    opacity: 0;
+}
+
+.menu a:hover::before {
+    /* Animación y aparicion de texto al hover */
+    letter-spacing: 0em;
+    opacity: 0.1;
+    transition: 0.3s ease-out;
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    /* --- Nav --- */
+.topnav {
+    padding: 0 30px;
+}
+
+/* --- Boton descargar resume --- */
+.btn-resume {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    transition-duration: 0.4s;
+    line-height: 1;
+    padding: 0.75rem 1rem;
+}
+
+
+/* ------------------------------------------------------ */
+/* --- Botones abrir y cerrar menús / Animación clip-path */
+/* ------------------------------------------------------ */
+
+/* Estilos básicos del boton */
+#open-menu {
+    right: 30px;
+}
+
+.menu {
+    /* Oculta todo */
+    clip-path: circle(0% at 85% 7%);
+    /* Valores de donde inicia la animacion */
+}
+
+}
+
+
+
+@media (min-width: 790px) and (max-width: 860px) {
+    /* ----------------------------------- */
+    /* --- Estilos de desktop a mobile --- */
+    /* ----------------------------------- */
+
+    /* --- Menu --- */
+    .menu li {
+        padding: 0 10px;
+    }
+
+    .menu-item a {
+        font-family: consolas;
+        color: var(--tittle-card);
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 70px;
+    }
+
+    /* --- Boton descargar resume --- */
+    .btn-resume {
+        font-family: consolas;
+        font-size: 15px;
+        line-height: 24px;
+        margin-left: 10px;
+        padding: 0.75rem 1rem;
+        line-height: 1;
+    }
+
+    .btn-resume:hover {
+        background-color: var(--hover-btn);
+    }
+}
+
+/* #menu {
+    background-color: var(--menu-bg);
+}
+
+#menu ul{
+    margin-bottom: 0;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu li>a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.container-fluid {
+    padding: 8px 50px;
+}
+
+.primary-navigation{
+    padding-right: 3rem;
+}
+
+.nav-link-span {
+    font-weight: 600;
+    color: var(--web-primary-color);
+}
+
+.nav-link {
+    width: max-content;
+    height: 40px;
+    padding: 8px;
+    display: block;
+}
+
+.nav-item{
+    padding-right: 1.5rem;
+}
+
+#menu li>a:hover {
+    color: var(--web-primary-color);
+}
+
+.bg-nav {
+    background-color: var(--secondary-bg);
+}
+
+.btn-resume {
+    background-color: transparent;
+    border: 1px solid var(--web-primary-color) !important;
+    color: var(--web-primary-color);
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    transition-duration: 0.4s;
+    line-height: 24px;
+}
+
+.btn-resume:hover {
+    background-color: var(--hover-btn);
+}
+
+#menu-btn {
+    top: 8px; right: 0px;
+    height: 50px; width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    background: var(--web-primary-color);
+    color: var(--menu-bg);
+    text-align: center;
+    z-index: 1000;
+} */
+
+/* #menu-btn > img {
+    width: 30px;
+    height: 30px;
+} */

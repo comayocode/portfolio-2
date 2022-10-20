@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --web-primary-color: #82DBD8;
+  --inside-logo-color: #3BACB6;
+  --hover-btn: rgba(0, 135, 130, .2);
+  --primary-bg: #313552;
+  --secondary-bg: rgba(39, 42, 64, .9);
+  --beige-title: #E9DAC1;
+  --tittle-section: #FCF8E8;
+  --desc-section: #C7CDDF;
+  --tittle-card: #fff;
+  --desc-card: #A8B2D1;
+
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--desc-section);
+
+  /* --- SIEMPRE TENER ESPACIADO ENTRE LA NAVBAR Y EL CONTENIDO --- */
+  padding-top: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--web-primary-color);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0; padding: 0;
+}

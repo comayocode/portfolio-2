@@ -1,0 +1,125 @@
+:root{
+    --modal-title-color: #E9DAC1;
+}
+
+/* MODAL 2 */
+/* +----- AVERIGUAR EL BUG DE LAG EN CHROME -----+
+.modal.fade.show {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+*/
+
+.modal-content {
+    background-color: #313552;
+}
+
+button.btn-close {
+    background-color: #54b1ae;
+    opacity: 1;
+    border: 1px solid #469c99;
+}
+
+.no-border {
+    border: none;
+}
+
+.body-titles-video {
+    margin-top: 20px;
+}
+
+.description-modal {
+    max-width: 500px;
+    text-align: justify;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.description-modal > h5 {
+    width: 100%;
+}
+
+.description-modal-view-code{
+    width: 100%;
+}
+
+.modal-title{
+    color: var(--tittle-section);
+}
+
+.body-titles {
+    color: var(--tittle-section);
+}
+
+.title-tecnologias{
+    margin-top: 30px;
+}
+
+.modal-body{
+    padding-top: 0;
+}
+
+.modal-description {
+    color: #C7CDDF;
+    font-weight: 500;
+}
+
+.tech-list{
+    color: #E9DAC1;
+}
+
+.etiquetas-modal-container {
+    margin-top: 10px;
+}
+
+.etiqueta-modal {
+    color: #c9c9c9;
+    font-family: 'Consolas';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 18px;
+    margin-right: 20px;
+}
+
+.etiqueta-modal:hover{
+    color: var(--web-primary-color);
+    cursor: pointer;
+}
+
+/* ESTILOS DE LOS BOTONES */
+
+.links-projects-container {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.btn-back-modal{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn-link-project{
+    background-color: transparent;
+    border: 1px solid var(--web-primary-color) !important;
+    color: var(--web-primary-color);
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    transition-duration: 0.6s;
+    margin-right: 20px;
+    line-height: 24px;
+}
+
+.btn-link-project:hover {
+    background-color: var(--hover-btn);
+}
+
+.link-project {
+    text-decoration: none;
+    color: var(--web-primary-color);
+}
+
+.link-project:hover {
+    color: var(--web-primary-color);
+}

@@ -1,0 +1,44 @@
+.hero-img {
+    max-width: 194px;
+    padding-top: 20px;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: bolder;
+    color: var(--beige-title);
+    margin-top: 10px;
+}
+
+.dev-tittle{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--tittle-card);
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+.hero-description {
+    width: 270px;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 30px;
+    margin-bottom: 0;
+}
+
+.hero-btn-resume {
+    font-family: 'Inter', sans-serif;
+    margin-top: 30px;
+}
+
+.btn-down {
+    display: none;
+}
+
+img[data-aos],
+h1[data-aos],
+h2[data-aos],
+p[data-aos] {
+    position: relative;
+    z-index: -1;
+}
