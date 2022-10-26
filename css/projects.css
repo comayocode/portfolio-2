@@ -100,3 +100,43 @@
 .open-modal:hover{
     color: aquamarine;
 }
+
+/* --- MODALES PARA MOBILE --- */
+.modal-title {
+    font-size: 18px;
+    /* margin-right: 25px; */
+    justify-content: space-between;
+}
+
+
+/* Boton cerrar modal */
+.btn-close-container {
+    width: 50px;
+}
+
+.modal-header .btn-close {
+    margin:  0;
+}
+
+/* Titulos h5 del modal */
+.h5, h5 {
+    font-size: 1rem;
+}
+
+/* Descripcion del modal */
+.modal-description {
+    font-size: 15px;
+    list-style: disc;
+}
+
+/* Etiquetas del modal */
+.etiqueta-modal {
+    padding-right: 15px; padding-top: 8px;
+    margin: 0;
+    font-size: 15px;
+}
+
+/* Agregar espaciado arriba en los botones de ver codigo y ver live demo */
+.btn-link-project-2 {
+    margin-top: 10px;
+}

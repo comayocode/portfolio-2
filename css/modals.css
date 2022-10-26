@@ -2,14 +2,6 @@
     --modal-title-color: #E9DAC1;
 }
 
-/* MODAL 2 */
-/* +----- AVERIGUAR EL BUG DE LAG EN CHROME -----+
-.modal.fade.show {
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-}
-*/
-
 .modal-content {
     background-color: #313552;
 }
@@ -30,7 +22,6 @@ button.btn-close {
 
 .description-modal {
     max-width: 500px;
-    text-align: justify;
     margin: 0 auto;
     margin-top: 40px;
 }
