@@ -1,0 +1,102 @@
+
+#proyectos {
+    padding: 40px 0;
+}
+
+.projects-title,
+.cards-container {
+    max-width: 270px;
+}
+
+.cards-container {
+    padding-top: 40px;
+}
+
+.card {
+    height: 290px;
+    width: 270px;
+    background-color: #3C3C54;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition: transform 0.4s;
+    border: none;
+    cursor: default;
+}
+
+/* --- DIMENSIONES DE ICONOS DE LAS TARJETAS --- */
+.card-img-container {
+    margin: 20px 20px 0 20px;
+}
+
+.img-folder {
+    width: 33px;
+}
+
+.github-color {
+    width: 21px;
+}
+
+.link-img {
+    width: 27.5px;
+}
+
+/* Cambiar color al SVG */
+.github-color,
+.link-img {
+    margin-left: 13px;
+    color: #EEE6CE;
+    transition: color .6s ease;
+}
+
+.github-color:hover,
+.link-img:hover {
+    color: #82DBD8;
+}
+
+/* --- DESCRIPCION/TEXTO DE LA TARJETA --- */
+.descripcion-proyecto {
+    margin: 25px 20px 0 20px;
+}
+
+.titulo-proyecto {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.78px;
+    margin-bottom: 0;
+    color: #FFFFFF;
+}
+
+.sobre-proyecto {
+    margin: 10px 0 0 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.94px;
+    color: #A8B2D1;
+}
+
+.etiquetas {
+    box-sizing: border-box;
+    padding: 15px 20px 0 20px;
+    position: fixed;
+    bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.etiqueta {
+    font-family: 'Consolas';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 20px;
+    color: #8892B0;
+}
+
+/* --- ESTILOS DE LAS ETIQUETAS/TECNOLOGÍAS --- */
+.open-modal{
+    text-decoration: none;
+    color: var(--web-primary-color);
+}
+
+.open-modal:hover{
+    color: aquamarine;
+}
