@@ -16,10 +16,13 @@
   <!-- Custom Css -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/modals.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="css/modals.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/projects.css">
+
 
   <!-- Custom JS -->
   <script defer src="js/app.js"></script>
@@ -72,7 +75,7 @@
     </nav>
 
     <!----- Hero ----->
-    <section id="hero" class="d-flex justify-content-center flex-column align-items-center">
+    <section id="hero" class="d-flex flex-column align-items-center">
       <div class="hero-container d-flex flex-column ">
         <img class="hero-img align-self-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"
           data-aos-once="true" src="img/about-me/20220223_Logo_v1.svg" alt="Logo comayo">
@@ -91,10 +94,8 @@
         </a>
       </div>
 
-
-
       <!-- BOTÓN PARA BAJAR A LA SECCION SOBRE MÍ -->
-      <div class="down d-flex justify-content-center flex-column align-items-center">
+      <div class="down">
         <a class="btn-down" href="#about">
           <svg class="btn-down-color" width="59" height="59" viewBox="0 0 59 59" fill="currentcolor"
             xmlns="http://www.w3.org/2000/svg">
@@ -104,8 +105,8 @@
           </svg>
         </a>
       </div>
-    </section>
 
+    </section>
   </header>
 
   <!-- <section id="lateral-contact">
@@ -156,10 +157,9 @@
     </div>
   </section> -->
 
-
   <!-- ========== SOBRE MÍ ========== -->
   <section id="about" class="d-flex justify-content-center flex-column align-items-center">
-    <div class="about-container" data-aos="fade-up" data-aos-delay="400ms" data-aos-duration="1000" data-aos-once="true">
+    <div class="about-container d-flex flex-column " data-aos="fade-up" data-aos-delay="400ms" data-aos-duration="1000" data-aos-once="true">
       <div class="d-flex" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true">
         <h3 class="section-title fw-semibold"><span class="title-span">01. </span>Sobre mí</h3>
         <img class="line" src="img/about-me/linea.svg" alt="horizontal-line">
@@ -178,97 +178,116 @@
     </div>
 
     <!-- EDUCACIÓN -->
-    <!-- <div class="education ">
+    <div class="education">
       <h3 class="education-tittle fw-semibold" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Educación Académica</h3>
-      <div class="education-card-container d-flex justify-content-between">
+      <div class="education-card-container d-flex flex-column">
         <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-once="true">
           <div class="card-education border-2 rounded-4" >
-            <h5 class="card-education-tittle fw-bold text-center">Tecnólogo A. Desarrollo Software</h5>
-            <p class="card-education-desc fw-light text-center">Servicio Nacional de Aprendizaje</p>
-            <p class="card-education-year fw-light text-center">2022- 2024 (Cursando)</p>
+            <div class="card-education-info">
+              <h5 class="card-education-tittle fw-bold text-center">Tecnólogo en Análisis y Desarrollo de Software</h5>
+              <p class="card-education-desc fw-light text-center">Servicio Nacional de Aprendizaje</p>
+              <p class="card-education-year fw-light text-center">2022-Presente</p>
+            </div>
           </div>
         </div>
         <div data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000" data-aos-once="true">
           <div class="card-education border-2 rounded-4">
-            <h5 class="card-education-tittle fw-bold text-center">Diplomado Desarrollo de Apps Web</h5>
-            <p class="card-education-desc fw-light text-center">U. Tecnológica de Pereira MisiónTic 2022</p>
-            <p class="card-education-year fw-light text-center">2022- 2022 (Cursando)</p>
+            <div class="card-education-info">
+              <h5 class="card-education-tittle fw-bold text-center">Diplomado Desarrollo de Apps Web</h5>
+              <p class="card-education-desc fw-light text-center">UTP - MisionTic</p>
+              <p class="card-education-year fw-light text-center">2022</p>
+            </div>
           </div>
         </div>
         <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000" data-aos-once="true">
-          <div class="card-education border-2 rounded-4">
-            <h5 class="card-education-tittle fw-bold text-center">Técnico Desarrollo de Software</h5>
-            <p class="card-education-desc fw-light text-center">Servicio Nacional de Aprendizaje</p>
-            <p class="card-education-year fw-light text-center">2018 (Culminado)</p>
+          <div class="card-education rounded-4">
+            <div class="card-education-info">
+              <h5 class="card-education-tittle fw-bold text-center">Técnico en Desarrollo de Software</h5>
+              <p class="card-education-desc fw-light text-center">Servicio Nacional de Aprendizaje</p>
+              <p class="card-education-year fw-light text-center">2018</p>
+            </div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
   </section>
 
   <!----------------->
   <!-- HABILIDADES -->
   <!----------------->
   <section id="skills" class="d-flex justify-content-center flex-column align-items-center">
-    <!-- <div class="skills-container">
+    <div class="skills-container">
       <div class="d-flex" data-aos="fade" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true">
         <h3 class="section-title fw-semibold"><span class="title-span">02. </span>Habilidades</h3>
         <img class="line" src="img/about-me/linea.svg" alt="horizontal-line">
       </div>
 
-      <div class="software-skills d-flex">
-        <div class="skill-container skill-container-1 position-relative" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" data-aos-once="true">
+      <div class="software-skills">
+        <div class="skill-container skill-1 skill-container-1 position-relative" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" data-aos-once="true">
           <img class="skill-img hover-status " src="img/Skillset/html.svg" alt="HTML">
           <span class="tooltiptext">HTML</span>
         </div>
 
-        <div class="skill-container position-relative" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
-          <img class="skill-img" src="img/Skillset/css.svg" alt="HTML">
+        <div class="skill-container skill-2 position-relative" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+          <img class="skill-img" src="img/Skillset/css.svg" alt="CSS">
           <span class="tooltiptext">CSS</span>
         </div>
 
-        <div class="skill-container position-relative" data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000" data-aos-once="true">
-          <img class="skill-img" src="img/Skillset/Python.svg" alt="HTML">
-          <span class="tooltiptext">Python</span>
+        <div class="skill-container skill-3 position-relative" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+          <img class="skill-img" src="img/Skillset/JavaScript.svg" alt="JavaScript">
+          <span class="tooltiptext">JavaScript</span>
         </div>
 
-        <div class="skill-container position-relative" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
-          <img class="skill-img" src="img/Skillset/java.svg" alt="HTML">
+        <div class="skill-container skill-4 position-relative" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
+          <img class="skill-img" src="img/Skillset/java.svg" alt="Java">
           <span class="tooltiptext">Java</span>
         </div>
 
-        <div class="skill-container skill-container-5 position-relative" data-aos="fade-left" data-aos-delay="250" data-aos-duration="1000" data-aos-once="true">
-          <img class="skill-img" src="img/Skillset/mySQL.svg" alt="HTML">
+        <!-- <div class="skill-container skill-5 position-relative" data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000" data-aos-once="true">
+          <img class="skill-img" src="img/Skillset/Python.svg" alt="HTML">
+          <span class="tooltiptext">Python</span>
+        </div> -->
+
+        <div class="skill-container skill-6 position-relative" data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000" data-aos-once="true">
+          <img class="skill-img" src="img/Skillset/bootstrap.svg" alt="bootstrap">
+          <span class="tooltiptext">Bootstrap</span>
+        </div>
+
+        <div class="skill-container skill-7 skill-container-5 position-relative" data-aos="fade-left" data-aos-delay="250" data-aos-duration="1000" data-aos-once="true">
+          <img class="skill-img" src="img/Skillset/mySQL.svg" alt="MySQL">
           <span class="tooltiptext">MySQL</span>
         </div>
 
-        <div class="skill-container position-relative" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
-          <img class="skill-img" src="img/Skillset/Adobe XD.svg" alt="HTML">
-          <span class="tooltiptext">Adobe XD</span>
-        </div>
-
-        <div class="skill-container position-relative" data-aos="fade-right" data-aos-delay="350" data-aos-duration="1000" data-aos-once="true">
-          <img class="skill-img" src="img/Skillset/figma.svg" alt="HTML">
+        <div class="skill-container skill-8 position-relative" data-aos="fade-right" data-aos-delay="350" data-aos-duration="1000" data-aos-once="true">
+          <img class="skill-img" src="img/Skillset/figma.svg" alt="Figma">
           <span class="tooltiptext">Figma</span>
         </div>
 
-        <div class="skill-container position-relative" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true">
-          <img class="skill-img" src="img/Skillset/git.svg" alt="HTML">
+        <div class="skill-container skill-9 position-relative" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true">
+          <img class="skill-img" src="img/Skillset/git.svg" alt="Git">
           <span class="tooltiptext">Git</span>
         </div>
 
-        <div class="skill-container position-relative" data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000" data-aos-once="true">
-          <img class="skill-img" src="img/Skillset/VSCode.svg" alt="HTML">
+        <div class="skill-container skill-10 skill-container-10 position-relative" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true">
+          <img class="skill-img" src="img/Skillset/Photoshop.svg" alt="Photoshop">
+          <span class="tooltiptext">Photoshop</span>
+        </div>
+
+        <div class="skill-container skill-11 position-relative" data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000" data-aos-once="true">
+          <img class="skill-img" src="img/Skillset/VSCode.svg" alt="Visual Studio Code">
           <span class="tooltiptext">VSCode</span>
         </div>
 
-        <div class="skill-container skill-container-10 position-relative" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true">
-          <img class="skill-img" src="img/Skillset/Photoshop.svg" alt="HTML">
-          <span class="tooltiptext">Photoshop</span>
+        <div class="skill-container skill-12 position-relative" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
+          <img class="skill-img" src="img/Skillset/Adobe XD.svg" alt="AdobeXD">
+          <span class="tooltiptext">Adobe XD</span>
         </div>
       </div>
-    </div> -->
+    </div>
   </section>
+
+
+
 
   <!---------------------------------------->
   <!------- MODALES DE LOS PROYECTOS ------->

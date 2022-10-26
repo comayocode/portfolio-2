@@ -1,5 +1,4 @@
 #about{
-    padding: 60px 25px;
 }
 
 .line {
@@ -8,6 +7,7 @@
 }
 
 .content {
+    width: 270px;
     padding-top: 20px;
 }
 
@@ -15,4 +15,47 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
+}
+
+/* ---------------------------------- */
+/* --- EDUCACION Y TITULOS DE ESTUDIO */
+/* ---------------------------------- */
+
+.education {
+    max-width: 270px;
+    padding: 60px 0;
+}
+
+.education-tittle {
+    color: var(--tittle-section);
+    font-size: 20px;
+    line-height: 24.2px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.card-education {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    height: 119px;
+    border: 2px solid var(--inside-logo-color);
+    margin-bottom: 20px;
+}
+
+.card-education-tittle {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 19.36px;
+    height: 47.49px;
+    margin-bottom: 0;
+}
+
+.card-education-desc,
+.card-education-year {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18.15px;
+    margin: 0;
+    color: var(--tittle-card);
 }
