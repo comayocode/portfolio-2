@@ -7,7 +7,7 @@
 .topnav {
     height: 70px;
     background-color: var(--secondary-bg);
-    padding: 0 25px ;
+    padding: 0 25px;
 
     /* Fijar menu */
     position: fixed;
@@ -162,71 +162,61 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-/* --- Nav --- */
-.menu {
-    margin: 0; padding: 0;
-}
 
-.topnav {
-    padding: 0 30px;
-}
-
-/* --- Boton descargar resume --- */
-.btn-resume {
-    margin-top: 30px;
-    font-size: 20px;
-    font-weight: 400;
-    transition-duration: 0.4s;
-    line-height: 1;
-    padding: 0.75rem 1rem;
-}
-
-/* ------------------------------------------------------ */
-/* --- Botones abrir y cerrar menús / Animación clip-path */
-/* ------------------------------------------------------ */
-
-/* Estilos básicos del boton */
-#open-menu {
-    right: 30px;
-}
-
-.menu {
-    /* Oculta todo */
-    clip-path: circle(0% at 85% 7%);
-    /* Valores de donde inicia la animacion */
-}
-
-}
-
-@media (min-width: 790px) and (max-width: 860px) {
-    /* ----------------------------------- */
-    /* --- Estilos de desktop a mobile --- */
-    /* ----------------------------------- */
-
-    /* --- Menu --- */
-    .menu li {
-        padding: 0 10px;
+    /* --- Nav --- */
+    .menu {
+        margin: 0;
+        padding: 0;
     }
 
-    .menu-item a {
-        font-family: consolas;
-        color: var(--tittle-card);
-        font-size: 0.9rem;
-        font-weight: 400;
-        line-height: 70px;
+    .topnav {
+        padding: 0 30px;
     }
 
     /* --- Boton descargar resume --- */
     .btn-resume {
-        font-family: consolas;
-        font-size: 15px;
-        line-height: 24px;
-        margin-left: 10px;
-        padding: 0.75rem 1rem;
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: 400;
+        transition-duration: 0.4s;
         line-height: 1;
+        padding: 0.75rem 1rem;
     }
 
-    .btn-resume:hover {
-        background-color: var(--hover-btn);
+    /* ------------------------------------------------------ */
+    /* --- Botones abrir y cerrar menús / Animación clip-path */
+    /* ------------------------------------------------------ */
+
+    /* Estilos básicos del boton */
+    #open-menu {
+        right: 30px;
+    }
+
+    .menu {
+        /* Oculta todo */
+        clip-path: circle(0% at 85% 7%);
+        /* Valores de donde inicia la animacion */
+    }
+
+}
+
+@media (min-width: 768px) {
+    .topnav {
+        padding: 0 50px;
+    }
+
+    /* ------------------------------------------------------ */
+    /* --- Botones abrir y cerrar menús / Animación clip-path */
+    /* ------------------------------------------------------ */
+
+    /* Estilos básicos del boton */
+    #open-menu {
+        right: 50px;
+    }
+
+    .menu {
+        /* Oculta todo */
+        clip-path: circle(0% at 89% 4%);
+        /* Valores de donde inicia la animacion */
     }
 }
