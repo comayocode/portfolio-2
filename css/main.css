@@ -28,6 +28,11 @@ body {
   padding-top: 70px;
 }
 
+/* --- SOLUCION BUG OVERFLOW-X QUE GENERA LA LIBRERIA AOS (ANIMACIONES) */
+section {
+  overflow:hidden;
+}
+
 section[id]{
   scroll-margin-top: 20px; /* Evitar que el menú se "coma" parte del HTML al dar clic al menú*/
 }
