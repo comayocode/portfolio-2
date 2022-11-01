@@ -16,6 +16,7 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,6 +26,10 @@ body {
 
   /* --- SIEMPRE TENER ESPACIADO ENTRE LA NAVBAR Y EL CONTENIDO --- */
   padding-top: 70px;
+}
+
+section[id]{
+  scroll-margin-top: 20px; /* Evitar que el menú se "coma" parte del HTML al dar clic al menú*/
 }
 
 a {
