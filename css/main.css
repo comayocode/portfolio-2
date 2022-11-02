@@ -24,17 +24,17 @@ body {
   background-color: var(--primary-bg);
   color: var(--desc-section);
 
-  /* --- SIEMPRE TENER ESPACIADO ENTRE LA NAVBAR Y EL CONTENIDO --- */
-  padding-top: 70px;
+  padding-top: 70px; /* +---- Aplicar espaciado entre el navbar y el contenido ----+ */
 }
 
-/* --- SOLUCION BUG OVERFLOW-X QUE GENERA LA LIBRERIA AOS (ANIMACIONES) */
+/* +--- Solucion a un bug del navbar que amplia el width de la página, causado por la librería AOS ----+ */
 section {
   overflow:hidden;
 }
 
+/* +--- Aplicar un margin top al hacer scroll a una sección con un id ----+ */
 section[id]{
-  scroll-margin-top: 20px; /* Evitar que el menú se "coma" parte del HTML al dar clic al menú*/
+  scroll-margin-top: 20px;
 }
 
 a {
@@ -44,22 +44,41 @@ a {
 
 ul {
   list-style: none;
-  /* No deja mostrar correctamente la lista en el modal del proyecto gestor de inventario  */
-  /* margin: 0; padding: 0; */
 }
 
 li, h1, h2, h3, h4 {
   margin: 0; padding: 0;
 }
 
-/* --- ESTILOS PARA TITULOS DE LAS SECCIONES */
+/* +----------------------------------------+ */
+/* +---- TÍTULOS DE TODAS LAS SECCIONES ----+ */
+/* +----------------------------------------+ */
+/* +---- Número de la sección ----+ */
 .title-span {
   color: var(--web-primary-color);
   font-weight: 500;
 }
 
+/* +---- Título de la sección ----+ */
 .section-title {
   color: var(--tittle-section);
   font-size: 22px;
   font-weight: 500;
+}
+
+/* +--------------------------+ */
+/* +---- MÓVILES DE 768PX ----+ */
+/* +--------------------------+ */
+@media (min-width: 768px) {
+
+  /* +---- Número de la sección ----+ */
+  .title-span {
+    font-weight: 700;
+  }
+
+  /* +---- Título de la sección ----+ */
+  .section-title {
+    font-size: 26px;
+    font-weight: 700;
+  }
 }
