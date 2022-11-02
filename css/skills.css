@@ -3,13 +3,13 @@
     padding: 60px 0;
 }
 
-/* Tamaño de los SVG */
+/* +---- Tamaño de los SVG ----+ */
 .skill-img {
     width: 42px;
     height: 42px;
 }
 
-/* Grilla para skills */
+/* +---- Grilla para skills ----+ */
 .software-skills {
     max-width: 270px;
     display: grid;
@@ -19,8 +19,58 @@
     padding-top: 30px;
 }
 
-/* Ocultar tooltip en resoluciones pequeñas */
+/* +---- Ocultar tooltip en resoluciones pequeñas ----+ */
 .tooltiptext {
     display: none;
+}
+
+@media (min-width: 768px) {
+    /* +---- Ocultar el contenido del atributo "data-aos" ----+ */
+    /* +---- Se oculta la animación que entra desde la derecha para dar espacio a la animación que se escibió en el archivo "grid.js" ----+ */
+    .skill-10[data-aos="fade-right"],
+    .skill-11[data-aos="fade-right"] {
+        /* NOTA: Esto provoca un "bug" si se usa un dispsitivo menor a 480px y se pone en formato horizontal el skill 10 y 11 no se van a poder ver. Se arregla recargando la página */
+        display: none;
+    }
+
+    /* +--- Padding entre secciones */
+    #skills {
+        padding-top: 100px; padding-bottom: 100px;
+    }
+
+    .skills-container {
+        width: 668px;
+    }
+
+    /* +---- Tamaño de los SVG ----+ */
+    .skill-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* +---- Grilla para skills ----+ */
+    .software-skills {
+        min-width: 100%;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 70px);
+        grid-row-gap: 70px;
+        grid-column-gap: 20px;
+        padding-top: 30px;
+    }
+
+    /* +---- Se posiciona en la parte del centro la skill de adobe XD */
+    .skill-12 {
+        grid-column: 3 / 3;
+    }
+
+    /* +--- Ajustar el ancho igual que la imagen */
+    .software-skills div {
+        width: min-content;
+    }
+
+    /* +---- Ocultar tooltip en resoluciones pequeñas ----+ */
+    .tooltiptext {
+        display: none;
+    }
 }
 
