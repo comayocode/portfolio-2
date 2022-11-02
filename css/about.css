@@ -1,4 +1,4 @@
-#about{
+#about {
     padding-top: 60px;
 }
 
@@ -12,6 +12,7 @@
     padding-top: 20px;
 }
 
+/* +---- Descripción "Sonbre mí" */
 .selft-description {
     font-size: 18px;
     font-weight: 500;
@@ -27,6 +28,7 @@
     padding: 60px 0;
 }
 
+/* +---- Titulo de la sección ----+ */
 .education-tittle {
     color: var(--tittle-section);
     font-size: 20px;
@@ -35,6 +37,7 @@
     padding-bottom: 25px;
 }
 
+/* +---- Contenedor de tarjeta individual ----+ */
 .card-education {
     display: flex;
     align-items: center;
@@ -44,14 +47,15 @@
     margin-bottom: 20px;
 }
 
+/* +---- Nombre del titulo de educacion ----+ */
 .card-education-tittle {
     font-size: 16px;
     font-weight: 800;
     line-height: 19.36px;
-    height: 47.49px;
     margin-bottom: 0;
 }
 
+/* +---- Universidad y año de estudio ----+ */
 .card-education-desc,
 .card-education-year {
     font-size: 15px;
@@ -59,4 +63,77 @@
     line-height: 18.15px;
     margin: 0;
     color: var(--tittle-card);
+}
+
+/* +--------------------------+ */
+/* +---- MOVILES DE 768PX ----+ */
+/* +--------------------------+ */
+@media (min-width: 768px) {
+    #about {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .line {
+        max-width: 300px;
+        padding-left: 20px;
+    }
+
+    .content {
+        width: 668px;
+        padding-top: 20px;
+    }
+
+    .selft-description {
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    /* +--------------------------------------+ */
+    /* +--- EDUCACION Y TITULOS DE ESTUDIO ---+ */
+    /* +--------------------------------------+ */
+    .education {
+        min-width: 668px;
+        padding-top: 70px;
+        padding-bottom: 0;
+    }
+
+    /* +---- Titulo de la sección ----+ */
+    .education-tittle {
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+    /* +---- Contenedor de las tarjetas para educación ----+ */
+    .education-card-container {
+        width: 100%;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* +---- Contenedor de tarjeta individual ----+ */
+    .card-education {
+        width: 324px;
+        height: 106px;
+    }
+
+    /* +---- Contenedor del texto de tarjeta ----+ */
+    .card-education-info {
+        width: 100%;
+    }
+
+    /* +---- Nombre del titulo de educacion ----+ */
+    .card-education-tittle {
+        font-size: 17px;
+        line-height: 21px;
+        margin-bottom: 5px;
+    }
+
+    /* +---- Universidad y año de estudio ----+ */
+    .card-education-desc,
+    .card-education-year {
+        font-size: 17px;
+        line-height: 18px;
+    }
 }
