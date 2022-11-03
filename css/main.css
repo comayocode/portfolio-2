@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+css/hero.css@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --web-primary-color: #82DBD8;
@@ -24,7 +24,7 @@ body {
   background-color: var(--primary-bg);
   color: var(--desc-section);
 
-  padding-top: 70px; /* +---- Aplicar espaciado entre el navbar y el contenido ----+ */
+  /* padding-top: 70px; */ /* +---- Aplicar espaciado entre el navbar y el contenido ----+ */
 }
 
 /* +--- Solucion a un bug del navbar que amplia el width de la página, causado por la librería AOS ----+ */
@@ -34,7 +34,7 @@ section {
 
 /* +--- Aplicar un margin top al hacer scroll a una sección con un id ----+ */
 section[id]{
-  scroll-margin-top: 20px;
+  /* scroll-margin-top: 70px; */
 }
 
 a {
