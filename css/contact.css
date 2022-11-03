@@ -1,27 +1,32 @@
+/* +---- ESPACIADO ENTRE SECCIONES ----+ */
 #contacto {
     padding: 60px 0;
 }
 
+/* +--- CONTENIDO DE LA SECCION ----+ */
+.contact-content {
+    width: 270px;
+}
+
+/* +---- Titulo del contenido ----+ */
 .contact-title {
     font-size: 24px;
     padding-top: 25px;
     text-align: center;
 }
 
-.contact-content {
-    width: 270px;
-}
-
+/* +---- Descripcion del contenido ----+ */
 .contact-description {
     font-size: 18px;
     padding-top: 20px;
 }
 
-/* --- BOTON SALUDA --- */
+/* +---- BOTON SALUDA ----+ */
 .btn-saluda-container {
     padding-top: 30px;
 }
 
+/* +---- Estilos generales ----+ */
 .btn-contact {
     background-color: transparent;
     color: var(--web-primary-color);
@@ -43,22 +48,83 @@
     background-color: var(--hover-btn);
 }
 
+/* +---- Imagen svg de email ----+ */
 .btn-contact>img {
     height: 30px;
 }
 
-/* --- BOTON PARA SUBIR --- */
-
-.btn-up-color{
+/* +---- BOTON PARA SUBIR ----+ */
+/* +--- Estilos y animacion al aplicar hover ----+ */
+.btn-up-color {
     color: #EEE6CE;
     transition: color .2s;
     transition: transform 0.5s;
 }
 
-.btn-up-color:hover{
+.btn-up-color:hover {
     transform: translateY(-5px);
     color: #82DBD8;
     cursor: pointer;
 }
 
+/* +---- CONTACTO EN MOBILE ----+ */
+.contact-mobile {
+    width: 668px;
+    width: 100%;
+    padding-top: 70px; padding-bottom: 30px;
+    /* margin: 0 auto; */
+}
 
+.svg-container {
+    width: 140px;
+    justify-content: space-between;
+}
+
+.contact-mobile-img {
+    color: #EEE6CE;
+    transition: color .2s;
+}
+
+.contact-mobile-img:hover {
+    color: #82DBD8;
+    cursor: pointer;
+}
+
+.contact-mobile-img-tw {
+    position: relative;
+    top: 2px;
+}
+
+@media (min-width: 768px) {
+
+    /* +---- ESPACIADO ENTRE SECCIONES ----+ */
+    #contacto {
+        padding-top: 100px; padding-bottom: 80px;
+    }
+
+    /* +--- CONTENIDO DE LA SECCION ----+ */
+    .contact-content {
+        width: 664px;
+    }
+
+    /* +---- Titulo del contenido ----+ */
+    .contact-title {
+        font-size: 35px;
+        padding-top: 30px;
+        font-weight: 600;
+    }
+
+    /* +---- Descripcion del contenido ----+ */
+    .contact-description {
+        font-size: 22.2px;
+        line-height: 26px;
+        font-weight: 500;
+    }
+
+    /* +---- BOTON SALUDA ----+ */
+    .btn-saluda-container {
+        padding-top: 30px;
+    }
+
+    
+}
