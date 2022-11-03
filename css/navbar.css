@@ -74,11 +74,10 @@
 /* ------------------------------------------------------ */
 /* +---- Estilos básicos del boton ----+ */
 #open-menu {
-    position: fixed;
+    position: relative;
     height: 50px;
     width: 50px;
     top: 10px;
-    right: 25px;
     border-radius: 50%;
     font-size: 30px;
     cursor: pointer;
@@ -184,10 +183,6 @@
     /* ------------------------------------------------------ */
     /* --- Botones abrir y cerrar menús / Animación clip-path */
     /* ------------------------------------------------------ */
-    /* +---- Estilos básicos del boton ----+ */
-    #open-menu {
-        right: 30px;
-    }
 
     .menu {
         /* +--- Valores de inicio y cierre de animación ----+ */
@@ -204,10 +199,6 @@
     /* ------------------------------------------------------ */
     /* --- Botones abrir y cerrar menús / Animación clip-path */
     /* ------------------------------------------------------ */
-    /* +---- Estilos básicos del boton ----+ */
-    #open-menu {
-        right: 50px;
-    }
 
     .menu-item a {
         font-size: 25px;
