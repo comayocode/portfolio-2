@@ -205,16 +205,16 @@
 
     /* Titulos h5 del modal */
     .h5, h5 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     /* Descripcion del modal */
     .modal-description {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     /* Etiquetas del modal */
     .etiqueta-modal {
-        font-size: 18px;
+        font-size: 17px;
     }
 }

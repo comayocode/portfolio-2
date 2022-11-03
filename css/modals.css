@@ -120,8 +120,5 @@ button.btn-close {
 /* +---------------------------------------+ */
 @media (min-width: 768px) {
 
-    /* +--- Botónes para ver en vivo o en github ----+ */
-    .btn-link-project{
-        font-size: 18px;
-    }
+    
 }
