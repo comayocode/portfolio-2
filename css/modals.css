@@ -114,3 +114,14 @@ button.btn-close {
 .link-project:hover {
     color: var(--web-primary-color);
 }
+
+/* +---------------------------------------+ */
+/* +--- Modal para dispositivos de 768 ----+ */
+/* +---------------------------------------+ */
+@media (min-width: 768px) {
+
+    /* +--- Botónes para ver en vivo o en github ----+ */
+    .btn-link-project{
+        font-size: 18px;
+    }
+}

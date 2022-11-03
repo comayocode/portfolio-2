@@ -140,3 +140,81 @@
 .btn-link-project-2 {
     margin-top: 10px;
 }
+
+@media (min-width: 768px) {
+    #proyectos {
+        padding-top: 100px; padding-bottom: 100px;
+    }
+
+    /* +--- CONTENEDORES DE TARJETAS ----+ */
+    .projects-title,
+    .cards-container {
+        max-width: 668px;
+    }
+
+    .card {
+        width: 324px; height: 310px;
+    }
+
+    /* +---- TAMAÑOS DE ICONOS ----+ */
+    .img-folder {
+        width: 41px;
+    }
+
+    .github-color {
+        width: 25px;
+    }
+
+    .link-img {
+        width: 32px;
+    }
+
+    /* +---- DESCRIPCION/TEXTO DE LA TARJETA ----+ */
+    /* +---- Titulo del proyecto ----+ */
+    .titulo-proyecto {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    /* +---- Sobre el proyecto ----+ */
+    .sobre-proyecto {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .etiqueta {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    /* --- ESTILOS DE LAS ETIQUETAS/TECNOLOGÍAS --- */
+    .open-modal{
+        text-decoration: none;
+        color: var(--web-primary-color);
+    }
+
+    .open-modal:hover{
+        color: aquamarine;
+    }
+
+    /* --- TAMAÑO DE FUENTE Y BOTON PARA MODALES EN MOBILE --- */
+    .modal-title {
+        font-size: 22px;
+    }
+
+    /* Titulos h5 del modal */
+    .h5, h5 {
+        font-size: 1.3rem;
+    }
+
+    /* Descripcion del modal */
+    .modal-description {
+        font-size: 18px;
+    }
+
+    /* Etiquetas del modal */
+    .etiqueta-modal {
+        font-size: 18px;
+    }
+}
