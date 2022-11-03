@@ -1,4 +1,3 @@
-
 #skills {
     padding: 60px 0;
 }
@@ -25,6 +24,7 @@
 }
 
 @media (min-width: 768px) {
+
     /* +---- Ocultar el contenido del atributo "data-aos" ----+ */
     /* +---- Se oculta la animación que entra desde la derecha para dar espacio a la animación que se escibió en el archivo "grid.js" ----+ */
     .skill-10[data-aos="fade-right"],
@@ -35,7 +35,8 @@
 
     /* +--- Padding entre secciones */
     #skills {
-        padding-top: 100px; padding-bottom: 100px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     .skills-container {
@@ -53,9 +54,9 @@
         min-width: 100%;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 70px);
-        grid-row-gap: 70px;
+        grid-row-gap: 45px;
         grid-column-gap: 20px;
-        padding-top: 30px;
+        padding-top: 40px;
     }
 
     /* +---- Se posiciona en la parte del centro la skill de adobe XD */
@@ -68,9 +69,61 @@
         width: min-content;
     }
 
+    /* +---------------------+ */
+    /* +---- TOOLTIPTEXT ----+ */
+    /* +---------------------+ */
     /* +---- Ocultar tooltip en resoluciones pequeñas ----+ */
     .tooltiptext {
-        display: none;
+        display: block;
+    }
+
+    /* +---- ToolTip hover de Skills ----+ */
+    .skill-container .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #FCF8E8;
+        color: #313552;
+        text-align: center;
+        border-radius: 20px;
+        padding: 3px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 115%;
+        left: 50%;
+        margin-left: -60px;
+        font-weight: 500;
+    }
+
+    .skill-container .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #FCF8E8 transparent transparent transparent;
+    }
+
+    .skill-container:hover .tooltiptext {
+        visibility: visible;
+    }
+
+    /* Animación Desvanecido tooltip*/
+    .skill-container .tooltiptext {
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    .skill-container:hover .tooltiptext {
+        opacity: 1;
+    }
+
+    .skill-container-5 {
+        margin: 0;
+    }
+
+    .skill-container-10 {
+        margin: 0;
     }
 }
-
