@@ -34,7 +34,7 @@ section {
 
 /* +--- Aplicar un margin top al hacer scroll a una sección con un id ----+ */
 section[id]{
-  /* scroll-margin-top: 70px; */
+  scroll-margin-top: 20px;
 }
 
 a {
@@ -64,6 +64,36 @@ li, h1, h2, h3, h4 {
   color: var(--tittle-section);
   font-size: 22px;
   font-weight: 500;
+}
+
+/* ESTILOS MODAL MEDIOS DE CONTACTO, MODAL ANIDADO, LATERAL CONTACT, BTN UP & DOWN */
+
+.twitter-color,
+.gmail-color,
+.linkedin-color,
+.github-lateral-color,
+.gmail-lateral-color,
+.btn-up-color,
+.btn-down-color{
+    color: #EEE6CE;
+    transition: color .2s;
+    transition: transform 0.5s;
+}
+
+.twitter-color:hover,
+.gmail-color:hover,
+.linkedin-color:hover,
+.github-lateral-color:hover,
+.gmail-lateral-color:hover,
+.btn-up-color:hover,
+.btn-down-color:hover{
+    transform: translateY(-5px);
+    color: #82DBD8;
+    cursor: pointer;
+}
+
+.social-svg-container{
+    margin-right: 15px;
 }
 
 /* +--------------------------+ */
