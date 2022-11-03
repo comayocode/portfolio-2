@@ -27,3 +27,12 @@ footer {
 .footer-link:hover{
     color: aquamarine;
 }
+
+@media (min-width: 768px) {
+    .footer-content {
+        width: 516px;
+        font-weight: 400;
+        font-size: 16px;
+        height: 46px;
+    }
+}
