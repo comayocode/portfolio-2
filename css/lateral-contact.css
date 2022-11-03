@@ -1,0 +1,56 @@
+#lateral-contact {
+    display: none;
+}
+
+@media (min-width: 960px) {
+    #lateral-contact {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .social {
+        max-width: fit-content;
+        margin-left: 50px;
+        position: relative;
+        bottom: -16px;
+    }
+
+    .social-center {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    .social-links {
+        max-width: fit-content;
+    }
+
+    .lateral-social-img {
+        margin-top: 30px;
+    }
+
+    .line-container {
+        margin-top: 30px;
+    }
+
+    .mail {
+        max-width: fit-content;
+        margin-right: 50px;
+    }
+
+    .mail-container {
+        max-width: fit-content;
+        max-height: fit-content;
+    }
+
+    .mail-link>a {
+        max-width: fit-content;
+        top: 0;
+    }
+
+    .mail>a {
+        transform: rotate(-90deg);
+    }
+}
