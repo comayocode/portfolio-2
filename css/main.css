@@ -112,3 +112,15 @@ li, h1, h2, h3, h4 {
     font-weight: 700;
   }
 }
+
+@media (min-width:960px) {
+  .zindex-for-lateral {
+    position: relative;
+    z-index: 9;
+  }
+
+  .up {
+    display: block;
+    width: 100px;
+  }
+}
