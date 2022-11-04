@@ -216,3 +216,63 @@
         margin-top: 20px;
     }
 }
+
+@media (min-width: 960px) {
+
+    /* ------------------------------------------------------ */
+    /* --- Botones abrir y cerrar menús / Animación clip-path */
+    /* ------------------------------------------------------ */
+    /* +---- Estilos básicos del boton ----+ */
+    #open-menu {
+        display: none;
+    }
+
+    /* +--- Cambio de ubiccion del menu ----+ */
+    .menu {
+        position: relative;
+        background-color: transparent;
+        flex-flow: row;
+        clip-path: none;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        width: auto;
+        padding-top: 0;
+    }
+
+    .menu a {
+        padding-bottom: 0;
+    }
+
+    .menu li {
+        padding: 0;
+    }
+
+    .menu-item a {
+        line-height: 20px;
+        padding-left: 30px;
+    }
+
+    .menu.active {
+        clip-path: none;
+    }
+
+    .menu a {
+        font-size: 16px;
+        font-weight: 500;
+        /* padding-bottom: 22px; */
+    }
+
+    .menu a::before {
+        content: none;
+        position: inherit;
+        transform: none;
+    }
+
+    /* +---- Boton descargar resume ----+ */
+    .btn-resume {
+        font-size: 16px;
+        padding: 0.6rem 1rem;
+        margin-top: 0;
+        margin-left: 30px;
+    }
+}
