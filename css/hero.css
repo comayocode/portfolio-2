@@ -79,6 +79,7 @@ p[data-aos] {
     }
 
     .hero-btn-resume {
+        margin-left: 0;
         margin-top: 40px;
         font-size: 20px;
     }

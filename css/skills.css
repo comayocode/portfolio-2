@@ -87,7 +87,7 @@
         border-radius: 20px;
         padding: 3px 0;
         position: absolute;
-        z-index: 1;
+        /* z-index: 1; */
         bottom: 115%;
         left: 50%;
         margin-left: -60px;
