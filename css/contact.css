@@ -71,7 +71,7 @@
 .contact-mobile {
     width: 668px;
     width: 100%;
-    padding-top: 70px; padding-bottom: 30px;
+    padding-top: 70px; padding-bottom: 0px;
     /* margin: 0 auto; */
 }
 
@@ -124,5 +124,11 @@
     /* +---- BOTON SALUDA ----+ */
     .btn-saluda-container {
         padding-top: 30px;
+    }
+}
+
+@media (min-width:960px) {
+    .contact-mobile {
+        display: none !important;
     }
 }
