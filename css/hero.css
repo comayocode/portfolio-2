@@ -1,6 +1,6 @@
 #hero {
     padding-bottom: 60px; padding-top: 60px;
-}
+    scroll-margin-top: 0px;}
 
 .hero-img {
     max-width: 194px;
@@ -79,9 +79,12 @@ p[data-aos] {
     }
 
     .hero-btn-resume {
+        font-family: 'Consolas';
+        letter-spacing: -1px;
         margin-left: 0;
         margin-top: 40px;
         font-size: 20px;
+        border: 2px solid var(--web-primary-color) !important;
     }
 
     /* Boton para bajar a seccion sobre mi */
@@ -101,5 +104,44 @@ p[data-aos] {
         transform: translateY(-5px);
         color: #82DBD8;
         cursor: pointer;
+    }
+}
+
+@media (min-width:1280px) and (max-height: 768px) {
+    #hero {
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .hero-img {
+        width: 200px;
+    }
+
+    .name {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .dev-tittle {
+        font-size: 30px;
+    }
+
+    .hero-description {
+        font-size: 19px;
+        padding-top: 20px;
+        width: 600px;
+    }
+
+    .hero-btn-resume {
+        font-size: 19px;
+        margin-top: 20px;
+    }
+
+    .down {
+        height: 80px;
+    }
+
+    .btn-down-color {
+        width: 60px;
     }
 }
