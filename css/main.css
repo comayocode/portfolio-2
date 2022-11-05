@@ -100,6 +100,10 @@ li, h1, h2, h3, h4 {
 /* +---- MÓVILES DE 768PX ----+ */
 /* +--------------------------+ */
 @media (min-width: 768px) {
+  /* +--- Aplicar un margin top al hacer scroll a una sección con un id ----+ */
+  section[id]{
+    scroll-margin-top: -20px;
+  }
 
   /* +---- Número de la sección ----+ */
   .title-span {
