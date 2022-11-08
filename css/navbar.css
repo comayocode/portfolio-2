@@ -1,5 +1,5 @@
 * {
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out !important;
     /* Animación al abrir y cerrar menu */
 }
 
@@ -60,7 +60,7 @@
     padding: 8px 12px;
     font-size: 17px;
     font-weight: 400;
-    transition-duration: 0.4s;
+    /* transition-duration: 0.4s; */
     line-height: 1;
     padding: 0.75rem 1rem;
 }
