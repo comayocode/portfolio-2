@@ -1,6 +1,5 @@
 * {
-    transition: all 0.3s ease-out !important;
-    /* Animación al abrir y cerrar menu */
+    transition: all 0.3s ease-out;
 }
 
 /* +---- Nav ----+ */
