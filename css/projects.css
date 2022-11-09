@@ -156,6 +156,11 @@
         width: 324px; height: 310px;
     }
 
+    /* Mover card arriba */
+    .card:hover {
+        transform: translateY(-10px) !important;
+    }
+
     /* +---- TAMAÑOS DE ICONOS ----+ */
     .img-folder {
         width: 41px;

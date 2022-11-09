@@ -118,6 +118,11 @@
         height: 106px;
     }
 
+    .card-education:hover {
+        background-color: rgba(59, 172, 182, 0.2);
+        cursor: default;
+    }
+
     /* +---- Contenedor del texto de tarjeta ----+ */
     .card-education-info {
         width: 100%;
