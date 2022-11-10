@@ -251,6 +251,10 @@
         padding-left: 30px;
     }
 
+    .menu-link.active {
+        color: var(--web-primary-color);
+    }
+
     .menu.active {
         clip-path: none;
     }
