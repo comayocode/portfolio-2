@@ -130,7 +130,7 @@
 
     /* +---- Nombre del titulo de educacion ----+ */
     .card-education-tittle {
-        font-size: 17px;
+        font-size: 16px;
         line-height: 21px;
         margin-bottom: 5px;
     }
@@ -138,7 +138,7 @@
     /* +---- Universidad y año de estudio ----+ */
     .card-education-desc,
     .card-education-year {
-        font-size: 17px;
+        font-size: 15px;
         line-height: 18px;
     }
 }
