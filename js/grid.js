@@ -1,4 +1,6 @@
+/* +---------------------------------------------+ */
 /* +--- Se captura el tamaño del dispositivo ----+ */
+/* +---------------------------------------------+ */
 const tamanioPantalla = screen.width;
 
 /* +--- Se captura el contenido del atributo ----+ */
