@@ -48,10 +48,6 @@ p[data-aos] {
 }
 
 @media (min-width: 768px) {
-    #hero {
-        height: 100vh;
-        padding-top: 100px; padding-bottom: 100px;
-    }
 
     .hero-img {
         max-width: 250px;
@@ -91,7 +87,7 @@ p[data-aos] {
     .btn-down {
         display: block;
         transform: rotate(180deg);
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
     .btn-down-color{
@@ -109,7 +105,7 @@ p[data-aos] {
 
 @media (min-width:1280px) and (max-height: 768px) {
     #hero {
-        height: 100vh;
+        /* height: 100vh; */
         justify-content: center;
     }
 
